@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 class SmallText extends StatelessWidget {
-  Color? color;
+  final Color? color;
   final String text;
   double size;
   double height;

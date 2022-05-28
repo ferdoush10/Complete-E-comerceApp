@@ -3,7 +3,6 @@ import 'package:ecommerce/widgets/app_column.dart';
 import 'package:ecommerce/widgets/app_icon.dart';
 import 'package:ecommerce/widgets/expandable_text.dart';
 //import 'package:ecommerce/widgets/expandable_text.dart';
-import 'package:readmore/readmore.dart';
 //import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 //import 'package:flutter/src/foundation/key.dart';
@@ -15,7 +14,7 @@ import '../../widgets/big_text.dart';
 //import '../../widgets/small_text.dart';
 
 class PopularFoodDetail extends StatelessWidget {
-  PopularFoodDetail({Key? key}) : super(key: key);
+  const PopularFoodDetail({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -57,10 +56,7 @@ class PopularFoodDetail extends StatelessWidget {
           //height: 300,
           top: Dimensions.popularFoodImgSize - 20,
           child: Container(
-            padding: EdgeInsets.only(
-                left: Dimensions.width20,
-                right: Dimensions.width20,
-                top: Dimensions.height20),
+            padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20, top: Dimensions.height20),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(Dimensions.radius20),
@@ -75,8 +71,8 @@ class PopularFoodDetail extends StatelessWidget {
                 SizedBox(height: Dimensions.height20),
                 BigText(text: "Introduce"),
                 const ExpandableText(
-                    text:
-                        ",I love flutter larabel and phop I love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phop")
+                  text: ",I love flutter larabel and phop I love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phop",
+                )
               ],
             ),
           ),
@@ -85,11 +81,7 @@ class PopularFoodDetail extends StatelessWidget {
       ]),
       bottomNavigationBar: Container(
         height: Dimensions.bottomHeightBar,
-        padding: EdgeInsets.only(
-            top: Dimensions.height30,
-            bottom: Dimensions.height30,
-            left: Dimensions.width20,
-            right: Dimensions.width20),
+        padding: EdgeInsets.only(top: Dimensions.height30, bottom: Dimensions.height30, left: Dimensions.width20, right: Dimensions.width20),
         decoration: BoxDecoration(
           color: AppColors.bottomBackgroundColor,
           borderRadius: BorderRadius.only(
@@ -97,8 +89,7 @@ class PopularFoodDetail extends StatelessWidget {
             topRight: Radius.circular(Dimensions.radius20 * 2),
           ),
         ),
-        child:
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Container(
             padding: EdgeInsets.only(
               left: Dimensions.width20,

@@ -56,7 +56,10 @@ class PopularFoodDetail extends StatelessWidget {
           //height: 300,
           top: Dimensions.popularFoodImgSize - 20,
           child: Container(
-            padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20, top: Dimensions.height20),
+            padding: EdgeInsets.only(
+                left: Dimensions.width20,
+                right: Dimensions.width20,
+                top: Dimensions.height20),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(Dimensions.radius20),
@@ -70,8 +73,16 @@ class PopularFoodDetail extends StatelessWidget {
                 const AppColumn(text: "Deshi Dish"),
                 SizedBox(height: Dimensions.height20),
                 BigText(text: "Introduce"),
-                const ExpandableText(
-                  text: ",I love flutter larabel and phop I love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phopI love flutter larabel and phop",
+                SizedBox(
+                  height: Dimensions.height20,
+                ),
+                const Expanded(
+                  child: SingleChildScrollView(
+                    child: ExpandableText(
+                      text:
+                          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like.",
+                    ),
+                  ),
                 )
               ],
             ),
@@ -81,7 +92,11 @@ class PopularFoodDetail extends StatelessWidget {
       ]),
       bottomNavigationBar: Container(
         height: Dimensions.bottomHeightBar,
-        padding: EdgeInsets.only(top: Dimensions.height30, bottom: Dimensions.height30, left: Dimensions.width20, right: Dimensions.width20),
+        padding: EdgeInsets.only(
+            top: Dimensions.height30,
+            bottom: Dimensions.height30,
+            left: Dimensions.width20,
+            right: Dimensions.width20),
         decoration: BoxDecoration(
           color: AppColors.bottomBackgroundColor,
           borderRadius: BorderRadius.only(
@@ -89,7 +104,8 @@ class PopularFoodDetail extends StatelessWidget {
             topRight: Radius.circular(Dimensions.radius20 * 2),
           ),
         ),
-        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+        child:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Container(
             padding: EdgeInsets.only(
               left: Dimensions.width20,

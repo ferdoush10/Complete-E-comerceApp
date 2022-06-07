@@ -1,4 +1,5 @@
 import 'package:ecommerce/pages/food/popular_food_detail.dart';
+import 'package:ecommerce/pages/food/recomended_food_detail.dart';
 import 'package:ecommerce/pages/home/main_food_page.dart';
 //import 'package:ecommerce/pages/home/food_page_body.dart';
 //import 'package:ecommerce/pages/home/main_food_page.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MainFoodPage(),
+      home: const RecomendedFoodDetail(),
     );
   }
 }
